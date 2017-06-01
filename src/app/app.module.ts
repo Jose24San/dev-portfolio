@@ -7,17 +7,24 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import {WindowRefService} from "./service/window-ref.service";
 import { SkillsComponent } from './skills/skills.component';
+import {RouterModule} from "@angular/router";
+import {rootRouterConfig} from "./app.routes";
+import { HomeComponent } from './home/home.component';
+import {CarouselModule} from 'primeng/primeng';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    SkillsComponent
+    SkillsComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    CarouselModule,
+    RouterModule.forRoot(rootRouterConfig)
   ],
   providers: [WindowRefService],
   bootstrap: [AppComponent]

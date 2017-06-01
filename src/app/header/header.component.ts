@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import {MegaMenuModule} from 'primeng/primeng';
 import {MenuItem} from "primeng/components/common/api";
 import {WindowRefService} from "../service/window-ref.service";
 
