@@ -1,0 +1,51 @@
+<section class="current-work">
+  <h2>Current Work</h2>
+
+
+  <div class="UTSW ui-g">
+    <div class="ui-g-12 ui-md-6 ui-lg-6">
+      <img class="logo clearfix" src="/assets/img/utsw-logo.png" alt="UTSouthwestern logo">
+      <p>I am a part of the Development team at UTSouthwestern where I do Front End Development and work closely with Backend Developers and UX Developers. The large size of the company and different kinds of sites makes the work challenging and exciting due to the constant change in response to the growth of the Health Industry.</p>
+    </div>
+
+    <div class="ui-g-12 ui-md-6 ui-lg-6">
+      <ul class="tech-icons">
+        <li>HTML5</li>
+        <li>SASS</li>
+        <li>Foundation Framework</li>
+        <li>JavaScript</li>
+        <li>jQuery</li>
+        <li>Jasmine Testing Framework</li>
+        <li>Gulp.js</li>
+        <li>Bower</li>
+        <li>NPM</li>
+        <li>Google Charts</li>
+        <li>Magnific Popup</li>
+        <li>Owl Carousel</li>
+        <li>FreeMarker Template Language</li>
+        <li>Alfresco CMS</li>
+      </ul>
+    </div>
+
+
+    <div class="ui-lg-12">
+      <p-carousel [value]="items" numVisible="1" pageLinks="5" responsive="true">
+        <ng-template let-item pTemplate="item">
+          <div class="ui-g ui-grid-responsive">
+            <div class="ui-lg-4 text">
+              {{item.text}}
+              <p><a href="{{item.link}}" target="_blank">Visit the site</a></p>
+            </div>
+            <div class="ui-lg-8">
+              <img src="{{item.image}}" alt="">
+            </div>
+          </div>
+        </ng-template>
+      </p-carousel>
+    </div>
+
+  </div>
+
+
+
+</section>

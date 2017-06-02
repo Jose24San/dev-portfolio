@@ -1,0 +1,83 @@
+
+.current-work {
+  background-color: #fff;
+  padding: 40px 0 66px 0;
+  max-width: 1008px;
+  margin: 0 auto;
+
+
+  h2 {
+    text-align: center;
+    color: black;
+    font-size: 32px;
+  }
+
+
+  .logo {
+    width: 200px;
+  }
+
+
+  .text {
+    background-color: #f0f0f0;
+  }
+}
+
+
+.tech-icons {
+  margin: 0;
+  padding: 0;
+
+  li {
+    display: inline-block;
+    padding: 10px;
+    background-color: #f6f7f9 ;
+    border: 1px solid #676363;
+    margin: 0 10px 10px 0;
+    border-radius: 5px;
+
+    &:hover,
+    &:focus {
+      background-color: #c3c3c3;
+    }
+  }
+}
+
+
+a {
+  color: #005c9a;
+
+  &:hover,
+  &:focus {
+    color: #636B80
+  }
+}
+
+
+
+:host /deep/ {
+
+  p-carousel {
+    img {
+      width: 100%;
+      float:right;
+    }
+  }
+
+
+
+  .ui-carousel-viewport {
+    height: 580px;
+  }
+
+  .ui-corner-all {
+    border-radius: 5px;
+  }
+
+  .ui-carousel-button {
+    display: none !important;
+  }
+}
+
+
+

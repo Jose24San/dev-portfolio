@@ -11,13 +11,15 @@ import {RouterModule} from "@angular/router";
 import {rootRouterConfig} from "./app.routes";
 import { HomeComponent } from './home/home.component';
 import {CarouselModule} from 'primeng/primeng';
+import { UtswWorkComponent } from './utsw-work/utsw-work.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     SkillsComponent,
-    HomeComponent
+    HomeComponent,
+    UtswWorkComponent
   ],
   imports: [
     BrowserModule,
