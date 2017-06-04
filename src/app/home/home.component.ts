@@ -39,7 +39,7 @@ export class HomeComponent implements OnInit {
     let pageScrollInstance1: PageScrollInstance = PageScrollInstance.newInstance({
       document: this.document,
       pageScrollDuration: 3000,
-      scrollTarget: '#test'
+      scrollTarget: '#scrollTarget'
     });
 
     this.pageScrollService.start(pageScrollInstance1);

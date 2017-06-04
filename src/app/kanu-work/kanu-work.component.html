@@ -1,0 +1,46 @@
+
+<section class="kanu-container">
+
+  <div class="ui-g kanu-work">
+
+
+
+
+
+    <div class="ui-g-12 ui-md-6 ui-lg-6">
+      <ul class="tech-icons">
+        <li>HTML5</li>
+        <li>SASS</li>
+        <li>JavaScript</li>
+        <li>TypeScript</li>
+        <li>PrimeNG UI Library</li>
+        <li>HighCharts Library</li>
+        <li>Angular 2</li>
+        <li>Masonry.js</li>
+        <li>Mapbox.js</li>
+      </ul>
+    </div>
+
+    <div class="ui-g-12 ui-md-6 ui-lg-6">
+      <img class="logo" src="/assets/img/kanu-logo.png" alt="A logo for the startup company Kanu">
+      <p>I work part time Remotely for the innovative startup <a href="http://kanuhq.com/">Kanu</a> that is applying machine learning models to big data to extract insights to help improves business revenue and more. As a Front End Developer with Kanu I work to ensure that the user interface works smoothly and displays data as cleanly as possible along with a UX Developer.</p>
+    </div>
+
+
+    <div class=" ui-g-12 ui-md-12 ui-lg-12 carousel-container">
+      <p-carousel [value]="items" numVisible="1" pageLinks="6" [responsive]>
+        <ng-template let-item pTemplate="item">
+          <div class="ui-g ui-grid ui-grid-responsive">
+            <div class="ui-lg-4 text">
+              <p>{{item.text}}</p>
+            </div>
+            <div class="ui-lg-8">
+              <img src="{{item.image}}" alt="">
+            </div>
+          </div>
+        </ng-template>
+      </p-carousel>
+    </div>
+  </div>
+
+</section>

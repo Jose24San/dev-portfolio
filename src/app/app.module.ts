@@ -10,12 +10,16 @@ import { HomeComponent } from './home/home.component';
 import {CarouselModule} from 'primeng/primeng';
 import { UtswWorkComponent } from './utsw-work/utsw-work.component';
 import {Ng2PageScrollModule} from 'ng2-page-scroll';
+import { KanuWorkComponent } from './kanu-work/kanu-work.component';
+import { FreelanceComponent } from './freelance/freelance.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    UtswWorkComponent
+    UtswWorkComponent,
+    KanuWorkComponent,
+    FreelanceComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,23 @@
+.kanu-container {
+  background-color: #d9d9d9;
+  padding: 70px 0;
+}
+
+.kanu-work {
+  max-width: 1008px;
+  margin: 0 auto;
+}
+
+
+.tech-icons {
+  margin-top:20px;
+}
+
+
+img {
+
+  @media only screen and (min-width: 1008px) {
+    max-height: 571px;
+  }
+
+}

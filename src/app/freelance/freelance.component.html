@@ -1,0 +1,39 @@
+<section>
+  <div class="ui-g freelance-work">
+    <div class="ui-g-12 ui-md-6 ui-lg-6 text-content">
+      <img class="logo clearfix" src="/assets/img/vanguard-logo.png" alt="UTSouthwestern logo">
+      <p>In my freetime when I am not tied up with my other development jobs I also do freelance work for small businesses.
+        <a href="http://vanguardcp.com/">Vanguard College Prep</a> a client of mine is a small local business here in the Dallas area that focuses on helping students ace their exams and essays when trying to get into their dream colleges.</p>
+    </div>
+
+    <div class="ui-g-12 ui-md-6 ui-lg-6">
+      <ul class="tech-icons">
+        <li>HTML5</li>
+        <li>SASS</li>
+        <li>JavaScript</li>
+        <li>jQuery</li>
+        <li>Google Charts</li>
+        <li>Gulp.js</li>
+        <li>WordPress</li>
+        <li>PHP</li>
+      </ul>
+    </div>
+
+    <div class="ui-lg-12 carousel-container">
+      <p-carousel [value]="items" numVisible="1" pageLinks="6" [responsive]>
+        <ng-template let-item pTemplate="item">
+          <div class="ui-g ui-grid ui-grid-responsive">
+            <div class="ui-lg-4 text">
+              {{item.text}}
+              <p><a href="{{item.link}}" target="_blank">Visit the site</a></p>
+            </div>
+            <div class="ui-lg-8">
+              <img src="{{item.image}}" alt="">
+            </div>
+          </div>
+        </ng-template>
+      </p-carousel>
+    </div>
+  </div>
+
+</section>
