@@ -1,5 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, Inject} from '@angular/core';
+import {DOCUMENT} from '@angular/platform-browser';
+import {PageScrollInstance, PageScrollService, EasingLogic} from 'ng2-page-scroll';
 import { WindowRefService } from "../service/window-ref.service";
+
 
 
 @Component({
@@ -12,30 +15,34 @@ export class HomeComponent implements OnInit {
 
   items: Object;
 
-  constructor(public winRef: WindowRefService) {
+  constructor(@Inject(DOCUMENT) private document: any,
+              private pageScrollService: PageScrollService,
+              public winRef: WindowRefService) {
 
     let _this = this;
 
     setTimeout(function () {
-
-      // winRef.getNativeWindow().scrollTo(0,  winRef.getNativeWindow().innerHeight);
-
-
+      if (document.body.scrollTop === 0) {
+        _this.scrollToItem();
+      }
     }, 5000)
+  }
 
+  ngOnInit() {
 
 
   }
 
-  ngOnInit() {
-    setTimeout(function () {
 
-     // document.querySelector('h2').scrollIntoView({
-     //   bahavior: 'smooth'
-     // });
 
-    }, 5000)
+  public scrollToItem() {
+    let pageScrollInstance1: PageScrollInstance = PageScrollInstance.newInstance({
+      document: this.document,
+      pageScrollDuration: 3000,
+      scrollTarget: '#test'
+    });
 
+    this.pageScrollService.start(pageScrollInstance1);
   }
 
 }
