@@ -9,7 +9,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "deploy": "ng build --prod --aot --base-href=/project_repo_name/ && cp ./dist/index.html ./dist/404.html && ./node_modules/.bin/angular-cli-ghpages --no-silent"
+    "deploy": "ng build --prod --aot --base-href=/portfolio/ && cp ./dist/index.html ./dist/404.html && ./node_modules/.bin/angular-cli-ghpages --no-silent"
   },
   "private": true,
   "dependencies": {
